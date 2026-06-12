@@ -1,13 +1,14 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 int main()
 {
-    for(int answer = 1;answer <= 100;answer++)
+    for(int answer = 1; answer <= 100; answer++)
     {
         if(answer % 7 == 0)
         {
             cout << answer << endl;
         }
     }
+    return 0;
 }
