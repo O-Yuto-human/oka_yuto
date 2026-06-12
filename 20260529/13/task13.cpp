@@ -1,15 +1,17 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 int main()
 {
-    int _color_code = 0x2DBE60;
-    int _r = _color_code&0xFF0000;
-    _r = _r >> 16;
-    int _g = _color_code&0x00FF00;
-    _g = _g >> 8;
-    int _b = _color_code&0x0000FF;
-    cout << _r << endl;
-    cout << _g << endl;
-    cout << _b << endl;
+    int colorCode = 0x2DBE60;
+    int r = colorCode&0xFF0000;
+    r = r >> 16;
+    int g = colorCode&0x00FF00;
+    g = g >> 8;
+    int b = colorCode&0x0000FF;
+    cout << r << endl;
+    cout << g << endl;
+    cout << b << endl;
+
+    return 0;
 }
