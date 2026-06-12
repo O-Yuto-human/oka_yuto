@@ -1,12 +1,14 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 int main()
 {
-    float _bookvalue = 1500;
-    float _tax = 0.1;
-    float _booktax = _bookvalue * _tax;
-    float _price = _bookvalue + _booktax;
-    cout << _booktax << endl;
-    cout << _price << endl;
+    float bookValue = 1500;
+    float tax = 0.1;
+    float bookTax = bookValue * tax;
+    float price = bookValue + bookTax;
+    cout << bookTax << endl;
+    cout << price << endl;
+
+    return 0;
 }
