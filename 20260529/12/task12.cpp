@@ -1,13 +1,20 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 int main()
 {
-    float _special_price = 150;
-    float _normal_price = 200;
-    float _tax = 0.1;
-    float _special_value = _special_price + _special_price * _tax;
-    float _normal_value = _normal_price + _normal_price * _tax;
-    cout << _special_value << endl;
-    cout << _normal_value << endl;
+    float specialPrice = 150;
+    float normalPrice = 200;
+    float tax = 0.1;
+    float specialValueTax = specialPrice * tax;
+    float normalValueTax = normalPrice * tax;
+    float specialValue = specialPrice + specialValueTax;
+    float normalValue = normalPrice + normalValueTax;
+  
+    cout << specialValue << endl;
+    cout << specialValueTax << endl;
+    cout << normalValue << endl;
+    cout << normalValueTax << endl;
+
+    return 0;
 }
