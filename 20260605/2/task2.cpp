@@ -1,0 +1,63 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int j = 0;
+    int maxX = 10;
+    int maxY = 10;
+    int maxPosX = 0;
+    int maxPosY = 0;
+    int minPosX = 0;
+    int minPosY = 0;
+    int size = maxX * maxY;
+    int array[10][10]
+    {
+    {5,364,251,751,705,847,491,121,82,938},
+    {303,265,674,868,92,194,954,244,350,980},
+    {952,153,440,475,908,652,410,719,367,761},
+    {737,732,217,842,358,764,464,570,672,693},
+    {467,57,590,256,151,891,557,536,219,729},
+    {653,33,756,98,815,358,129,403,610,807},
+    {729,64,306,677,603,712,582,375,317,326},
+    {792,854,524,76,197,745,533,61,869,230},
+    {440,174,672,845,795,667,886,677,782,761},
+    {838,813,898,383,651,186,393,305,731,666}
+    };
+
+    int max = array[0][0];
+    int min = array[0][0];
+
+    for(int i = 0; i < size;i++)
+    {
+        if(i >= 10)
+        {
+            i = 0;
+            j++;
+            if(j >= 10)
+            {
+                break;
+            }
+            
+        }
+        if(array[i][j] > max)
+        {
+            max = array[i][j];
+            maxPosX = i;
+            maxPosY = j;
+        }
+        else if(array[i][j] < min)
+        {
+            min = array[i][j];
+            minPosX = i;
+            minPosY = j;
+        }
+        else{}
+
+    }
+    cout << "最大値：" << max << "座標：" << maxPosX << "," << maxPosY << endl;
+    cout << "最小値：" << min << "座標：" << minPosX << "," << minPosY;
+
+    return 0;
+}
